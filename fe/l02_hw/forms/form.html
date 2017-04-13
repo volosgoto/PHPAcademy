@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dominos</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Forms, HTML, CSS">
+	<meta name="description" content="Forms"
+	<meta name="author" content="Volosovich Andrey">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Шановний учаснику конкурсу «Вчитель-новатор»!</h1>
+	<pre>
+	<p>
+	Заповніть, будь ласка, реєстраційну анкету українською мовою.
+	Прохання надати повну відповідь на всі поставлені запитання.
+	Якщо ви подаєте декілька конкурсних робіт, будь ласка,
+	заповніть дану анкету для кожної конкурсної роботи окремо.
+	Дякуємо Вам за участь у конкурсі та бажаємо успіхів!
+	</p>
+	</pre>
+
+<form action="/formhandler.php" method="POST" name="Анкета">
+	 <table border="1" width="200px" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="150px">
+				<p>1. Прізвище</p>
+			</td>
+			<td>
+				<input type="text" name="text1" size="20"
+        	    maxlength="50" value="Прізвище">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>2. Ім’я та по-батькові</p>
+			</td>
+			<td>
+				<input type="text" name="text2" size="20"
+        	    maxlength="50" value="Ім’я та по-батькові">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>3. Назва конкурсної роботи</p>
+			</td>
+			<td>
+				<input type="text" name="text3" size="20"
+        	    maxlength="50" value="Назва конкурсної роботи">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>4. Номінація конкурсної роботи.</p>
+			</td>
+			<td>
+				<select name="Назва конкурсної роботи">
+					<option>Навчальний проект</option>
+					<option>Виховний проект</option>
+					<option>Позашкільний проект</option>
+					<option>Навчальний контент</option>
+					<option>Он-лайновий освітній ресурс</option>
+					<option>Навчально-методичне забезпечення</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>5. Навчальна дисципліна</p>
+			</td>
+			<td>
+				<input type="text" name="text4" size="20"
+        	    maxlength="50" value="(наприклад, біологія)">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>6. Чи була апробована ваша робота?</p>
+			</td>
+			<td>
+				<p></p><input type="radio" name="text5" value="yes" checked>   Так</p>
+				<br>
+				<p><input type="radio" name="text5" size="no" > Нi</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>7. Якщо так, то на якому рівні?</p>
+			</td>
+			<td>
+				<input type="text" name="text6" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>8. Повна назва установи, де ви працюєте</p>
+			</td>
+			<td>
+				<input type="text" name="text7" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>9. Ваша посада</p>
+			</td>
+			<td>
+				<input type="text" name="text8" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>10. Місто/населений пункт</p>
+			</td>
+			<td>
+				<input type="text" name="text9" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>11. Область</p>
+			</td>
+			<td>
+				<input type="text" name="text10" size="20"
+        	    maxlength="50" value="(на вибір 24 області + АР Крим + м. Київ + м.Севастополь)">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>12. Мобільний телефон</p>
+			</td>
+			<td>
+				<input type="text" name="text11" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>13. Електронна пошта</p>
+			</td>
+			<td>
+				<input type="text" name="e-mail" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>14. Ви брали участь у попередніх конкурсах  «Вчитель-новатор»?</p>
+			</td>
+			<td>
+				<input type="text" name="text13" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>15. Якщо так,  то вкажіть, коли саме.</p>
+			</td>
+			<td>
+				<input type="text" name="text14" size="20"
+        	    maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>16. Яким чином ви дізналися про конкурс «Вчитель-новатор»? (на вибір, можна декілька варіантів)</p>
+			</td>
+			<td>
+				<p><input type="checkbox" name="variant1" value="Сайт МОН молодьспорту">Сайт МОН молодьспорту</p>
+				<p><input type="checkbox" name="variant3" value="Сайт Майкрософт Україна">Сайт Майкрософт Україна</p>
+				<input type="checkbox" name="variant4" value="Сайт Мережі «Партнерство в навчанні»">Сайт Мережі «Партнерство в навчанні»</p>
+				<p><input type="checkbox" name="variant5" value="Обласний ІППО">Обласний ІППО</p>
+				<p><input type="checkbox" name="variant6" value="Обласне управління освіти">Обласне управління освіти</p>
+				<p><input type="checkbox" name="variant7" value="Osvita.com">Osvita.com</p>
+				<p><input type="checkbox" name="variant8" value="Gurt.org.ua">Gurt.org.ua</p>
+				<p>інше</p><input type="text" name="text15" size="20" maxlength="50" value="">
+			</td>
+		</tr>
+		<tr>
+			<td width="150px">
+				<p>Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності (галочка обязательна)</p>
+			</td>
+			<td>
+				<p><input type="checkbox" name="variant9" value="sendform" checked="">Згоден</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="submit" name="sentform" value="Подати анкету">
+			</td>
+			<td>
+				<input type="reset" name="resetform" value="Заповнити знову">
+			</td>
+		</tr>
+
+	</table>
+</form>
+</bpody>
+</html>
