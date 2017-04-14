@@ -1,19 +1,21 @@
 body
 	{
 	margin: 0px;
-	background-color: grey;
+	background-color: #ffffff;
 }
 
 /*
 h1 {
 	margin-left: 20px;
 	font-family: Arial;
+	color: red
 }
 */
 
 p {
-	font-family: Verdana, Tahoma, Arial;
+	font-family: Arial;
 	text-align: left;
+	color: blue;
 }
 
 a {
