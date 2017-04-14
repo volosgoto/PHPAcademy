@@ -4,24 +4,37 @@
 	<title>Dominos</title>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="Forms, HTML, CSS">
-	<meta name="description" content="Forms"
+	<meta name="description" content="Forms">
 	<meta name="author" content="Volosovich Andrey">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Шановний учаснику конкурсу «Вчитель-новатор»!</h1>
 
-	<p>
-	Заповніть, будь ласка, реєстраційну анкету українською мовою. <br>
-	Прохання надати повну відповідь на всі поставлені запитання. <br>
-	Якщо ви подаєте декілька конкурсних робіт, будь ласка, <br>
-	заповніть дану анкету для кожної конкурсної роботи окремо. <br>
-	Дякуємо Вам за участь у конкурсі та бажаємо успіхів! <br>
-	</p>
+<div id="header">
+	<p class="left_me">Шановний учаснику конкурсу «Вчитель-новатор»!</p>
+</div>
 
+<div class="left_me">
+	<div class="parent">
+		<p class="child-1">
+		Заповніть, будь ласка, реєстраційну анкету українською мовою. <br>
+		Прохання надати повну відповідь на всі поставлені запитання. <br>
+		</p>
+	</div>
+	<div class="parent">
+		<p class="child-2">
+		Якщо ви подаєте декілька конкурсних робіт, будь ласка, <br>
+		</p>
+		<p class="child-1">	заповніть дану анкету для кожної конкурсної роботи окремо. <br>
+		Дякуємо Вам за участь у конкурсі та бажаємо успіхів! <br>
+		</p>
+	</div>
+</div>
+
+<div class="left_me">
 	<form action="/formhandler.php" method="POST" name="Анкета">
 		<p>
-			1.Прізвище <input type="text" name="text1" size="20" maxlength="50" value="Прізвище">
+			1. Прізвище <input type="text" name="text1" size="20" maxlength="50" value="Прізвище">
         </p>
 		<p>
 			2. Ім’я та по-батькові<input type="text" name="text2" size="20" maxlength="50" value="Ім’я та по-батькові">
@@ -30,7 +43,8 @@
 			3. Назва конкурсної роботи <input type="text" name="text3" size="20" maxlength="50" value="Назва конкурсної роботи"
 		</p>
 		<p>
-			4. Номінація конкурсної роботи.
+			4. Номінація конкурсної роботи
+<!--Drop list-->
 			<select name="Назва конкурсної роботи">
 					<option>Навчальний проект</option>
 					<option>Виховний проект</option>
@@ -39,6 +53,7 @@
 					<option>Он-лайновий освітній ресурс</option>
 					<option>Навчально-методичне забезпечення</option>
 			</select>
+<!--End of drop list-->
 		<p>
 			5. Навчальна дисципліна <input type="text" name="text4" size="20" maxlength="50" value="(наприклад, біологія)">
 		</p>
@@ -76,13 +91,36 @@
 		</p>
 		<p>
 			16. Яким чином ви дізналися про конкурс «Вчитель-новатор»? (на вибір, можна декілька варіантів)<br>
-			<p><input type="checkbox" name="variant3" value="Сайт МОН молодьспорту">Сайт МОН молодьспорту</p>
-			<p><input type="checkbox" name="variant3" value="Сайт Майкрософт Україна">Сайт Майкрософт Україна</p>
-			<p><input type="checkbox" name="variant4" value="Сайт Мережі «Партнерство в навчанні»">Сайт Мережі «Партнерство в навчанні»</p>
-			<p><input type="checkbox" name="variant5" value="Обласний ІППО">Обласний ІППО</p>
-			<p><input type="checkbox" name="variant6" value="Обласне управління освіти">Обласне управління освіти</p>
-			<p><input type="checkbox" name="variant7" value="Osvita.com">Osvita.com</p>
-			<p><input type="checkbox" name="variant8" value="Gurt.org.ua">Gurt.org.ua</p>
+<!-- Chekbox-->
+			<p>
+				<input type="checkbox" name="variant3" value="Сайт МОН молодьспорту">
+				<a href="http://mon.gov.ua/" target="_blank" title="Перейти на сайт">Сайт МОН молодьспорту</a>
+			</p>
+			<p>
+				<input type="checkbox" name="variant3" value="Сайт Майкрософт Україна">
+				<a href="https://www.microsoft.com/uk-ua/" target="_blank" title="Перейти на сайт">Сайт Майкрософт Україна</a>
+			</p>
+			<p>
+				<input type="checkbox" name="variant4" value="Сайт Мережі «Партнерство в навчанні»">
+				<a href="http://lib.iitta.gov.ua/247/1/sereda_tezy_Krivoj_Rog.pdf" target="_blank" title="Перейти на сайт">Сайт Мережі «Партнерство в навчанні»</a>
+			</p>
+			<p>
+				<input type="checkbox" name="variant5" value="Обласний ІППО">
+				<a href="http://www.loippo.lviv.ua/" title="Перейти на сайт">Обласний ІППО</a>
+			</p>
+			<p>
+				<input type="checkbox" name="variant6" value="Обласне управління освіти">
+				<a href="http://vin-osvita.gov.ua/article/view/25" title="Перейти на сайт">Обласне управління освіти</a>
+			</p>
+			<p>
+				<input type="checkbox" name="variant7" value="Osvita.com">
+				<a href="http://osvita.com/" title="Перейти на сайт">Osvita.com</a>
+			</p>
+			<p>
+				<input type="checkbox" name="variant8" value="Gurt.org.ua">
+				<a href="http://gurt.org.ua/" title="Перейти на сайт">Gurt.org.ua</a>
+			</p>
+<!-- End of chekbox-->
 			<p>інше</p><input type="text" name="text15" size="20" maxlength="50" value="">
 		<p>Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності (галочка обязательна)</p>
 		<p><input type="checkbox" name="variant9" value="sendform" checked="">Згоден</p>
@@ -92,5 +130,6 @@
 			<input type="reset" name="resetform" value="Заповнити знову">
 		</p>
 	</form>
-</bpody>
+</div>
+</body>
 </html>
