@@ -11,9 +11,9 @@
 
 	<?php
 /*
-*/
-
-
+sudo apt-get install php
+cd /полный путь/ php task_04.php
+ */
 	?>
 </body>
 </html>
