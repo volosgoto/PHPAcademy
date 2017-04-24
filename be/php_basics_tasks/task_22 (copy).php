@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Task 20</title>
+	<title>Task 21</title>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="php_basics_tasks">
 	<meta name="description" content="php_basics_tasks">
@@ -10,17 +10,17 @@
 <body>
 	<?php
 /*
-<p>20. Приведите число 20 к типу boolean. Объясните результат.</p>
+<p>22. Приведите число -20 к типу boolean. Объясните результат.</p>
  */
 
-	$myNumber = 10;
+	$myNumber = -22;
 	echo var_dump($myNumber);
 	echo '<br>';
 	$myBoolean = (boolean)($myNumber);
 	echo var_dump($myBoolean);
 
 
- 	$myNumber = 0;
+ 	$myNumber = 10;
 	echo var_dump($myNumber);
 	echo '<br>';
 	$myBoolean = (boolean)($myNumber);
