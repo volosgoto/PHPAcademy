@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>task 17</title>
+	<title>task 18</title>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="array_loops">
 	<meta name="description" content="array_loops">
@@ -11,9 +11,11 @@
 
 <?php
 /*
-<p>17.Сосктавьте массив месяцев. С помощью цикла foreach выведите все месяцы, а текущий
-месяц выведите жирным. Текущий месяц должен храниться в переменной $month.</p>
+<p>18. Составьте массив дней недели. С помощью цикла foreach выведите все дни недели,
+выходные дни следует вывести жирным.</p>
  */
+echo date('Y.m.d');
+echo '<br>';
 
 $arr = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 foreach($arr as $key) {
