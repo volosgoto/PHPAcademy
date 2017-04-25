@@ -22,7 +22,7 @@ $arr = array('green'=>'зеленый', 'red'=>'красный','blue'=>'гол�
 	}
 
 	foreach ($arr as $value) {
-		echo "Значение $key";
+		echo "Значение $value";
 		echo '<br>';
 	}
 
