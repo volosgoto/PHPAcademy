@@ -17,11 +17,11 @@
 echo date('Y.m.d');
 echo '<br>';
 
-$arr = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+$arr = array(1, 2, 3, 4, 5, 6, 7);
 foreach($arr as $key) {
-    $month = date("m");
-    if ($key == $month) {
-        echo "Текущий месяц $key";
+    $day = date("w");
+    if ($key == 6 || $key == 7) {
+        echo "Выходной  $key";
         echo '<br>';
     } else {
         echo "$key";
