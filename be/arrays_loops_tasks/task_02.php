@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>task 1</title>
+	<title>task 2</title>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="array_loops">
 	<meta name="description" content="array_loops">
