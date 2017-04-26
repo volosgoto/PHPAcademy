@@ -14,9 +14,15 @@
 '­1­2­3­4­5­6­7­8­9­'.
  */
 	$array = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+/* Способ 1.
 	$str = implode("", $array);
-
 	var_dump($str);
+*/
+
+// Способ 2.
+    foreach ($array as $val) {
+        echo "$val";
+    }
 
 ?>
 
