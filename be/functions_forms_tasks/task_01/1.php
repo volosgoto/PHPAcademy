@@ -7,26 +7,22 @@
 
 */
 
-
-	$varA = explode(' ', $_GET['varA']);
-	$varB = explode(' ', $_GET['varB']);
-
-	
-// добавить проверку на входные данные
-	if ($varA == $varB) {
-		echo "Равны";
+function getCommonWords($a, $b) {
+	if (is_string($_GET['varA']) && is_string($_GET['varB'])) {
+			$varA = explode(' ', $_GET['varA']);
+			$varB = explode(' ', $_GET['varB']);
+			$resultArray = array_intersect($varA, $varB);
+	}
+	if  ($resultArray) {
+		echo "Одинаковые значения полей: ";
+			foreach ($resultArray as $value) {
+				echo "$value" . ' ';
+			} 
 	} else {
-		echo "Не равны";
+		echo "Нет одинаковых значений";
 	}
-echo "<br>";
-
-var_dump($_GET['varA']);
-echo "<br>";
-
-	$result = array_intersect($varA, $varB); 
-	foreach ($result as $value) {
-		echo "$value";
-		echo "<br>";
-	}
+}
+	
+getCommonWords($_GET['varA'], $_GET['varB']);
 
 ?>
