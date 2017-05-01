@@ -7,16 +7,10 @@ p {	font-family: Verdana;
 	color: #000;
 }
 
-div {
-  display: inline-block;
-}
-
-
 hr {
-    border: solid;
-    background-color: red;
-    color: red;
-    height: 2px;
+    border: solid 1px red;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
@@ -27,47 +21,34 @@ hr {
 	border-color: blue;
 	width: 100px;
 	height: 300px;
-	overflow: hidden;
+    overflow: hidden;
+    display: block;
 }
 .in_container {
   width: 100%;
-  height: 50%;
-  margin: 0px;
-  padding: 0px;
+    height: 50%;
+    margin: -2px;
+    padding: 0px;
   border-width: 2px;
   border-style: solid;
   border-color: green;
-  
+  display: inherit;
 }
 
 .center_me {
-  margin-top: 60%;
-  margin-left: 40%;
-  display: block;
+    margin-top: 50%;
+    margin-right: auto;
+    margin-left: 50%;
+    margin-bottom: auto;
+    padding: 0px;
+    overflow: hidden;
+    display: inherit;
 }
-
-
-.left_me {
-  margin-top:  10%;
-  margin-left: 10%;
-  display: inline;
-  float: left;
-}
-
-.right_bottom_me {
-  margin-top: 100%;
-  margin-right: 10%;
-  display: inline;
-  float: right;
-}
-
-
 
 .circle {
     width: 20px;
     height: 20px;
     background: #000;
     border-radius: 20px;
-    display: block;
-    
+    display: inline-flex;
 }
