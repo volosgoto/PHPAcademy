@@ -19,7 +19,7 @@ function getCommonWords($a, $b) {
 				echo "$value" . ' ';
 			} 
 	} else {
-		echo "Нет одинаковых значений";
+		echo "Нет одинаковых значений!";
 	}
 }
 	
