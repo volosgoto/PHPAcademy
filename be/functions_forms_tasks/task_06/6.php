@@ -3,22 +3,19 @@
 /*
 <p>6. Создать страницу, на которой можно загрузить несколько фотографий в галерею. Все загруженные фото должны помещаться в папку gallery и выводиться на странице в виде таблицы.</p>
  */
-
 echo "<pre>";
-
-    var_dump($_FILES);
+print_r($_POST);
+print_r($_FILES);
 echo "</pre>";
 
-if(isset($_POST['submit'])){
-    //print_r($_FILES);
-    foreach($_FILES['userfiles']['name'] as $k => $val){
-        move_uploaded_file($_FILES['userfiles']['name'][$k], "gallery/".$_FILES['userfiles']['name'][$k]);
-    }
-}
+
+    $a = file_get_contents($_FILES['userfile']['tmp_name']);
+
+file_put_contents("test.jpg", $a);
 
 /*
 array (size=1)
-  'userfile' => 
+  'userfile' =>
     array (size=5)
       'name' => string '320424.jpg' (length=10)
       'type' => string '' (length=0)
